@@ -1,0 +1,11 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: online-boutique
+upstream:
+  type: git
+  git:
+    commit: 3a1850d65f8ca9dfd361f741791c9b7506226827
+    repo: https://github.com/GoogleCloudPlatform/microservices-demo
+    directory: /release
+    ref: master
